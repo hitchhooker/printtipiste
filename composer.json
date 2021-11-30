@@ -1,0 +1,20 @@
+{
+    "name": "hitchhooker/alpinewind",
+    "description": "A Wordpress theme implementing WindiCSS and Alpine JS.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tommi Niemi",
+            "email": "tommi@niemi.lol"
+        }
+    ],
+    "require": {
+        "illuminate/view": "^8.0",
+        "illuminate/events": "^8.0",
+        "illuminate/filesystem": "^8.0"
+    },
+    "scripts": {
+        "post-install-cmd": "npm install"
+    }
+}
