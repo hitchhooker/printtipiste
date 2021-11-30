@@ -15,6 +15,6 @@
         "illuminate/filesystem": "^8.0"
     },
     "scripts": {
-        "post-install-cmd": "npm install"
+        "post-install-cmd": "yarn"
     }
 }

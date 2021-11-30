@@ -1,17 +1,16 @@
 {
-  "name": "alpinewind",
-  "version": "1.0.0",
+  "name": "alpinewind",  "version": "1.0.0",
   "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
   "main": "index.js",
   "scripts": {
-    "development": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix",
-    "dev": "npm run development",
-    "prod": "npm run production",
+    "development": "windicss './templates/**/*.php' -o ./dist/windi.css | mix",
+    "dev": "yarn run development",
+    "prod": "yarn run production",
     "watch": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch",
     "hot": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch --hot",
     "production": "windicss './templates/**/*.php' -o ./dist/windi.css -m || mix --production",
-    "postinstall": "npm run dev"
-  },
+    "postinstall": "yarn run dev"
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukeraymonddowning/AlpineWind.git#AlpineWind"
@@ -33,7 +32,7 @@
   },
   "homepage": "https://github.com/lukeraymonddowning/AlpineWind/tree/AlpineWind#readme",
   "dependencies": {
-    "alpinejs": "^3.5.2"
+    "alpinejs": "2.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
