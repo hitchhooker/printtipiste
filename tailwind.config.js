@@ -1,3 +1,4 @@
+// we have chosen to use attributify and variant based grouping for example: class=...sm=...md=...dark=...
 module.exports = {
   theme: {
     extend: {

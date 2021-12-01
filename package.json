@@ -3,12 +3,12 @@
   "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
   "main": "index.js",
   "scripts": {
-    "development": "windicss './templates/**/*.php' -o ./dist/windi.css | mix",
+    "development": "windicss './templates/**/*.php' -o ./dist/windi.css -a | mix",
     "dev": "yarn run development",
     "prod": "yarn run production",
-    "watch": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch",
-    "hot": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch --hot",
-    "production": "windicss './templates/**/*.php' -o ./dist/windi.css -m || mix --production",
+    "watch": "windicss './templates/**/*.php' -o ./dist/windi.css -ad | mix watch",
+    "hot": "windicss './templates/**/*.php' -o ./dist/windi.css -ad | mix watch --hot",
+    "production": "windicss './templates/**/*.php' -o ./dist/windi.css -am || mix --production",
     "postinstall": "yarn run dev"
  },
   "repository": {
@@ -37,6 +37,7 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.39",
+    "laravel-mix-brotli": "^1.0.0",
     "laravel-mix-webp": "^0.1.3",
     "windicss": "^3.2.1"
   }
