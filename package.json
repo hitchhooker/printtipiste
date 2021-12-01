@@ -3,11 +3,7 @@
   "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "development": "windicss './templates/**/*.php' -o ./dist/windi.css | mix",
-=======
-    "development": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix",
->>>>>>> 8d5dbd6 (add yarn instead)
     "dev": "yarn run development",
     "prod": "yarn run production",
     "watch": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch",
